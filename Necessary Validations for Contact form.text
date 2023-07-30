@@ -1,0 +1,17 @@
+Necessary Validations for Each Field:
+
+Name and Surname: Required, should accept only valid names (no special characters or numbers).
+
+Personal Code: Optional, should accept a valid personal code (if provided).
+
+Case Number: Optional, should accept a valid case number (if provided).
+
+Contact Phone Number: Required, should accept a valid phone number (numeric characters).
+
+Email Address: Required, should accept a valid email address format.(no special characters)
+
+Address: Required, should accept a valid address.(no special characters)
+
+Dropdown: Required, should have a default option and specific necessary options.
+
+Submit Button: Should be enabled only when all required fields are filled correctly.
