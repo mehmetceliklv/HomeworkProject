@@ -1,17 +1,26 @@
 Necessary Validations for Each Field:
 
 Name and Surname: Required, should accept only valid names (no special characters or numbers).
+There should be correct error message which informing users about invalid form of enrty.
 
 Personal Code: Optional, should accept a valid personal code (if provided).
+There should be correct error message which informing users about invalid form of enrty.
 
 Case Number: Optional, should accept a valid case number (if provided).
+There should be correct error message which informing users about invalid form of enrty.
 
 Contact Phone Number: Required, should accept a valid phone number (numeric characters).
+There should be correct error message which informing users about invalid form of enrty.
 
 Email Address: Required, should accept a valid email address format.(no special characters)
+There should be correct error message which informing users about invalid form of enrty.
 
 Address: Required, should accept a valid address.(no special characters)
+There should be correct error message which informing users about invalid form of enrty.
 
-Dropdown: Required, should have a default option and specific necessary options.
+Dropdown: Required, should have a default option selected.
 
 Submit Button: Should be enabled only when all required fields are filled correctly.
+
+Confirmation message: Required ,should be confirmation message after successful form submission.
+Error message: Required ,should be error message after invalid form of enrty in any required field.
