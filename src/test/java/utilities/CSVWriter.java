@@ -10,9 +10,8 @@ import java.io.IOException;
 public class CSVWriter {
     public static void writeUserToCSV(UserResponsePojo user, String csvFileName) throws IOException {
         File csvFile = new File(csvFileName + ".csv");
-        FileWriter fileWriter = new FileWriter(csvFile, false); // Overwrite mode to create a new file
+        FileWriter fileWriter = new FileWriter(csvFile, true); // Append mode to add new content to the existing file
 
-        // Check if the file exists and write the header only if the file is empty
         if (!csvFile.exists() || csvFile.length() == 0) {
             fileWriter.write("\"id\",\"name\",\"email\",\"gender\",\"status\"\n");
         }
@@ -28,6 +27,7 @@ public class CSVWriter {
 
         fileWriter.close();
         System.out.println("User written to " + csvFileName + ".csv");
+
     }
 
     public static void main(String[] args) throws IOException {

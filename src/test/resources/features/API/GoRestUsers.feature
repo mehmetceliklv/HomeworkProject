@@ -1,5 +1,5 @@
 
-@ApiUserCreationEndToEnd  @Api
+@ApiUserCreationEndToEnd  @Api @All
 Feature: Api User Creation by Admin  End-to-End
 
 
