@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checking Maven Version') {
+            steps {
+                script {
+                    bat 'mvn -v'
+                }
+            }
+        }
+        stage('Repo Cloning') {
+            steps {
+                git branch: 'main', credentialsId: '48f05fa2-8927-4cc0-b5cb-0a9af114162e', url: 'https://github.com/mehmetceliklv/HomeworkProject.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                script {
+                    bat 'mvn clean test'
+                }
+            }
+        }
+    }
+}
