@@ -66,7 +66,7 @@ This generates only a simple cucumber html/xml/json reports under Target file.
 
 To generate a detailed extent report for any tests, use the `TestRunnerExtentReport.java` file.
 You should provide the tag name of test scenarios in `TestRunnerExtentReport.java`.
-
+The detailed extent report will be generated automatically under the project directory with exact  date and time of running tests.
 
 ## Test Data
 ___
