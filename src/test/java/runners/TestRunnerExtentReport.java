@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepDefinitions","Hooks"},
 
-        tags = "@All",
+        tags = "@ApiUserCreationEndToEnd",
 
         dryRun = false,
         stepNotifications = true, // to see report gherkin step level
