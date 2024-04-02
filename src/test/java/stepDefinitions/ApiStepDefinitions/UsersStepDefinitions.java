@@ -115,7 +115,7 @@ public class UsersStepDefinitions {
     @When("User enter expected data for user update")
     public void user_enter_expected_data_for_user_update() {
         userCreationPojo.setName("Michael Jackson");
-        userCreationPojo.setEmail("michaeljackson13@mailinator.com");
+        userCreationPojo.setEmail("michaeljackson14@mailinator.com");
         userCreationPojo.setGender("male");
         userCreationPojo.setStatus("inactive");
     }
