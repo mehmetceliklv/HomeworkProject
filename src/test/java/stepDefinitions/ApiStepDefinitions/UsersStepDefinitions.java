@@ -135,7 +135,7 @@ public class UsersStepDefinitions {
 
         UserUpdateResponsePojo actualResponse=obj.readValue(response.asString(),UserUpdateResponsePojo.class);
         Assert.assertEquals("Michael Jackson",actualResponse.getName());
-        Assert.assertEquals("michaeljackson13@mailinator.com",actualResponse.getEmail());
+        Assert.assertEquals("michaeljackson14@mailinator.com",actualResponse.getEmail());
         Assert.assertEquals("male",actualResponse.getGender());
         Assert.assertEquals("inactive",actualResponse.getStatus());
     }
