@@ -27,9 +27,10 @@ public class Driver {
 
     public static WebDriver getDriver(){
         System.setProperty("webdriver.http.factory", "jdk-http-client");
+        String browser = System.getenv("BROWSER_OPTION");
 
-        if (browsers.get() == null){
-            browsers.set("chrome");
+        if (browsers.get() == null) {
+            browsers.set(browser != null ? browser : "chrome"); // Default to "chrome" if not specified
         }
         if(driver.get() == null){
             switch(browsers.get()){
